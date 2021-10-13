@@ -1,5 +1,8 @@
 #!/usr/bin/php
 <?php
+/**
+ * These constants define which snapshots are managed by this tool
+ */
 const UBUNTU_DISTROS = array("focal", "groovy", "hirsute", "impish");
 const UBUNTU_COMPONENTS = array("main", "multiverse", "restricted", "universe");
 const UBUNTU_PATCH_LEVELS = array("backports", "proposed", "release", "updates");
@@ -34,6 +37,20 @@ class OSMirror
 		$this->PatchLevels = $patchlevels;
 		$this->Mirrors = $mirrors;
 	}
+
+	public function ConstructArrayOfMirrorsForDate(string $date) {
+		$expanded = array();
+		foreach ($this->Mirrors as $mirror) {
+			foreach ($this->PatchLevels as $patchlevel) {
+				foreach ($this->Components as $component) {
+					$expanded[] = sprintf("%s-%s-%s-%s-%s", $mirror,
+						$this->OS, $patchlevel, $component, $date);
+				}
+			}	
+		}
+		unset($mirror, $patchlevel, $component);
+		return $expanded;
+	}
 }
 
 /**
@@ -41,11 +58,10 @@ class OSMirror
  */
 $ubuntu_os_mirrors = array();
 foreach(UBUNTU_DISTROS as $distro) {
-	var_dump($distro);
 	$ubuntu_os_mirrors[] = new OSMirror($distro, UBUNTU_COMPONENTS, UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
 }
 
-var_dump($ubuntu_os_mirrors);
+var_dump($ubuntu_os_mirrors[0]->ConstructArrayOfMirrorsForDate("today"));
 
 //exec("aptly snapshot list -raw", $all_snapshots );
 
