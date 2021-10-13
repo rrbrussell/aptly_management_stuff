@@ -48,8 +48,7 @@ class OSMirror
 		$this->Mirrors = $mirrors;
 	}
 
-	public function ConstructArrayOfSnapshotsForDate(
-		string $date) {
+	public function GetSnapshotsForDate( string $date) {
 		$expanded = array();
 		foreach ($this->Mirrors as $mirror) {
 			foreach ($this->PatchLevels as $patchlevel) {
@@ -80,30 +79,83 @@ class OSMirror
 		unset($mirror, $patchlevel, $component);
 		return $expanded;
 	}
+
+	public function GetMirrorsForComponent(string $component) {
+		$expanded = array();
+		foreach ($this->Mirrors as $mirror) {
+			foreach ($this->PatchLevels as $patchlevel) {
+				$expanded[] = 
+				sprintf(OSMirror::MIRROR_STRING_TEMPLATE,
+					$mirror, $this->OS, $patchlevel, $component);
+			}
+		}
+		unset($mirror, $patchlevel);
+		return $expanded;
+	}
+
+	public function GetSnapshotsForComponent(string $component,
+		string $date) {
+		$expanded = array();
+		foreach ($this->Mirrors as $mirror) {
+			foreach ($this->PatchLevels as $patchlevel) {
+				$expanded[] =
+				sprintf(OSMirror::SNAPSHOT_STRING_TEMPLATE,
+					$mirror, $this->OS, $patchlevel, $component,
+					$date);
+			}
+		}
+		return $expanded;
+	}
+
+	public function GetMergedSnapshotForComponent(
+		string $component, string $date) {
+		return sprintf(OSMirror::SNAPSHOT_STRING_TEMPLATE,
+			"merged", $this->OS, "complete", $component, $date);
+	}
+
+	public function GetMergedSnapshotsForDate(string $date) {
+		$expanded = array();
+		foreach ($this->Components as $component) {
+			$expanded[] = $this->GetMergedSnapshotForComponent(
+				$component, $date);
+		}
+		return $expanded;
+	}
+
+	public function GetComponentList(string $sep) {
+		return implode($sep, $this->Components);
+	}
 }
 
 /**
  * Build the array of ubuntu OSMirrors
  */
-$ubuntu_os_mirrors = array();
-foreach(UBUNTU_DISTROS as $distro) {
-	$ubuntu_os_mirrors[] = new OSMirror($distro,
-	UBUNTU_COMPONENTS, UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
-}
-
-var_dump($ubuntu_os_mirrors[0]->
-	ConstructArrayOfSnapshotsForDate("today"));
-
-//exec("aptly snapshot list -raw", $all_snapshots );
-
 /*
-var_dump($all_snapshots);
-foreach($all_snapshots as $snapshot) {
-	var_dump(explode("-", $snapshot));
-}
-*/
+foreach(array("groovy", "hirsute", "impish") as $distro) {
+	$current = new OSMirror($distro, UBUNTU_COMPONENTS,
+	UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
+	foreach(UBUNTU_COMPONENTS as $component) {
+		$aptly_merge_commandline =
+		"aptly snapshot merge -latest " .
+		$current->GetMergedSnapshotForComponent(
+			$component, "today") . " " .
+		implode(" ", $current->GetSnapshotsForComponent(
+			$component, "today"));
+		print($aptly_merge_commandline . "\n");
+	}
+}*/
 
-$aptly_merge_commandline =
-"aptly snapshot merge -latest result sources"
+foreach(array("groovy", "hirsute", "impish") as $distro) {
+	$current = new OSMirror($distro, UBUNTU_COMPONENTS,
+	UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
+	$aptly_publish_commandline =
+		"aptly publish snapshot -acquire-by-hash -distribution="
+		. $distro . "-complete -component=" .
+		$current->GetComponentList(",") . " " .
+		implode(" ",
+		$current->GetMergedSnapshotsForDate("today")) .
+		" ubuntu";
+	print($aptly_publish_commandline . "\n");
+}
 
 ?>
