@@ -1,6 +1,4 @@
 snapshot create docker-focal-stable-today from mirror docker-focal-stable
-snapshot create docker-groovy-stable-today from mirror docker-groovy-stable
-snapshot create docker-hirsute-stable-today from mirror docker-hirsute-stable
 snapshot create microsoft-dotnet-today from mirror microsoft-dotnet
 snapshot create microsoft-edge-today from mirror microsoft-edge
 snapshot create microsoft-vscode-today from mirror microsoft-vscode

@@ -1,0 +1,584 @@
+mirror update docker-focal-stable
+mirror update microsoft-dotnet
+mirror update microsoft-edge
+mirror update microsoft-vscode
+mirror update security-focal-backports-main
+mirror update security-focal-backports-multiverse
+mirror update security-focal-backports-restricted
+mirror update security-focal-backports-universe
+mirror update security-focal-proposed-main
+mirror update security-focal-proposed-multiverse
+mirror update security-focal-proposed-restricted
+mirror update security-focal-proposed-universe
+mirror update security-focal-release-main
+mirror update security-focal-release-multiverse
+mirror update security-focal-release-restricted
+mirror update security-focal-release-universe
+mirror update security-focal-updates-main
+mirror update security-focal-updates-multiverse
+mirror update security-focal-updates-restricted
+mirror update security-focal-updates-universe
+mirror update security-groovy-backports-main
+mirror update security-groovy-backports-multiverse
+mirror update security-groovy-backports-restricted
+mirror update security-groovy-backports-universe
+mirror update security-groovy-proposed-main
+mirror update security-groovy-proposed-multiverse
+mirror update security-groovy-proposed-restricted
+mirror update security-groovy-proposed-universe
+mirror update security-groovy-release-main
+mirror update security-groovy-release-multiverse
+mirror update security-groovy-release-restricted
+mirror update security-groovy-release-universe
+mirror update security-groovy-updates-main
+mirror update security-groovy-updates-multiverse
+mirror update security-groovy-updates-restricted
+mirror update security-groovy-updates-universe
+mirror update security-hirsute-backports-main
+mirror update security-hirsute-backports-multiverse
+mirror update security-hirsute-backports-restricted
+mirror update security-hirsute-backports-universe
+mirror update security-hirsute-proposed-main
+mirror update security-hirsute-proposed-multiverse
+mirror update security-hirsute-proposed-restricted
+mirror update security-hirsute-proposed-universe
+mirror update security-hirsute-release-main
+mirror update security-hirsute-release-multiverse
+mirror update security-hirsute-release-restricted
+mirror update security-hirsute-release-universe
+mirror update security-hirsute-updates-main
+mirror update security-hirsute-updates-multiverse
+mirror update security-hirsute-updates-restricted
+mirror update security-hirsute-updates-universe
+mirror update security-impish-backports-main
+mirror update security-impish-backports-multiverse
+mirror update security-impish-backports-restricted
+mirror update security-impish-backports-universe
+mirror update security-impish-proposed-main
+mirror update security-impish-proposed-multiverse
+mirror update security-impish-proposed-restricted
+mirror update security-impish-proposed-universe
+mirror update security-impish-release-main
+mirror update security-impish-release-multiverse
+mirror update security-impish-release-restricted
+mirror update security-impish-release-universe
+mirror update security-impish-updates-main
+mirror update security-impish-updates-multiverse
+mirror update security-impish-updates-restricted
+mirror update security-impish-updates-universe
+mirror update ubuntu-focal-backports-main
+mirror update ubuntu-focal-backports-multiverse
+mirror update ubuntu-focal-backports-restricted
+mirror update ubuntu-focal-backports-universe
+mirror update ubuntu-focal-proposed-main
+mirror update ubuntu-focal-proposed-multiverse
+mirror update ubuntu-focal-proposed-restricted
+mirror update ubuntu-focal-proposed-universe
+mirror update ubuntu-focal-release-main
+mirror update ubuntu-focal-release-multiverse
+mirror update ubuntu-focal-release-restricted
+mirror update ubuntu-focal-release-universe
+mirror update ubuntu-focal-updates-main
+mirror update ubuntu-focal-updates-multiverse
+mirror update ubuntu-focal-updates-restricted
+mirror update ubuntu-focal-updates-universe
+mirror update ubuntu-groovy-backports-main
+mirror update ubuntu-groovy-backports-multiverse
+mirror update ubuntu-groovy-backports-restricted
+mirror update ubuntu-groovy-backports-universe
+mirror update ubuntu-groovy-proposed-main
+mirror update ubuntu-groovy-proposed-multiverse
+mirror update ubuntu-groovy-proposed-restricted
+mirror update ubuntu-groovy-proposed-universe
+mirror update ubuntu-groovy-release-main
+mirror update ubuntu-groovy-release-multiverse
+mirror update ubuntu-groovy-release-restricted
+mirror update ubuntu-groovy-release-universe
+mirror update ubuntu-groovy-updates-main
+mirror update ubuntu-groovy-updates-multiverse
+mirror update ubuntu-groovy-updates-restricted
+mirror update ubuntu-groovy-updates-universe
+mirror update ubuntu-hirsute-backports-main
+mirror update ubuntu-hirsute-backports-multiverse
+mirror update ubuntu-hirsute-backports-restricted
+mirror update ubuntu-hirsute-backports-universe
+mirror update ubuntu-hirsute-proposed-main
+mirror update ubuntu-hirsute-proposed-multiverse
+mirror update ubuntu-hirsute-proposed-restricted
+mirror update ubuntu-hirsute-proposed-universe
+mirror update ubuntu-hirsute-release-main
+mirror update ubuntu-hirsute-release-multiverse
+mirror update ubuntu-hirsute-release-restricted
+mirror update ubuntu-hirsute-release-universe
+mirror update ubuntu-hirsute-updates-main
+mirror update ubuntu-hirsute-updates-multiverse
+mirror update ubuntu-hirsute-updates-restricted
+mirror update ubuntu-hirsute-updates-universe
+mirror update ubuntu-impish-backports-main
+mirror update ubuntu-impish-backports-multiverse
+mirror update ubuntu-impish-backports-restricted
+mirror update ubuntu-impish-backports-universe
+mirror update ubuntu-impish-proposed-main
+mirror update ubuntu-impish-proposed-multiverse
+mirror update ubuntu-impish-proposed-restricted
+mirror update ubuntu-impish-proposed-universe
+mirror update ubuntu-impish-release-main
+mirror update ubuntu-impish-release-multiverse
+mirror update ubuntu-impish-release-restricted
+mirror update ubuntu-impish-release-universe
+mirror update ubuntu-impish-updates-main
+mirror update ubuntu-impish-updates-multiverse
+mirror update ubuntu-impish-updates-restricted
+mirror update ubuntu-impish-updates-universe
+snapshot drop docker-focal-stable-yesterday
+snapshot drop microsoft-dotnet-yesterday
+snapshot drop microsoft-edge-yesterday
+snapshot drop microsoft-vscode-yesterday
+snapshot drop merged-focal-complete-main-yesterday
+snapshot drop merged-focal-complete-multiverse-yesterday
+snapshot drop merged-focal-complete-restricted-yesterday
+snapshot drop merged-focal-complete-universe-yesterday
+snapshot drop merged-groovy-complete-main-yesterday
+snapshot drop merged-groovy-complete-multiverse-yesterday
+snapshot drop merged-groovy-complete-restricted-yesterday
+snapshot drop merged-groovy-complete-universe-yesterday
+snapshot drop merged-hirsute-complete-main-yesterday
+snapshot drop merged-hirsute-complete-multiverse-yesterday
+snapshot drop merged-hirsute-complete-restricted-yesterday
+snapshot drop merged-hirsute-complete-universe-yesterday
+snapshot drop merged-impish-complete-main-yesterday
+snapshot drop merged-impish-complete-multiverse-yesterday
+snapshot drop merged-impish-complete-restricted-yesterday
+snapshot drop merged-impish-complete-universe-yesterday
+snapshot drop security-focal-backports-main-yesterday
+snapshot drop security-focal-backports-multiverse-yesterday
+snapshot drop security-focal-backports-restricted-yesterday
+snapshot drop security-focal-backports-universe-yesterday
+snapshot drop security-focal-proposed-main-yesterday
+snapshot drop security-focal-proposed-multiverse-yesterday
+snapshot drop security-focal-proposed-restricted-yesterday
+snapshot drop security-focal-proposed-universe-yesterday
+snapshot drop security-focal-release-main-yesterday
+snapshot drop security-focal-release-multiverse-yesterday
+snapshot drop security-focal-release-restricted-yesterday
+snapshot drop security-focal-release-universe-yesterday
+snapshot drop security-focal-updates-main-yesterday
+snapshot drop security-focal-updates-multiverse-yesterday
+snapshot drop security-focal-updates-restricted-yesterday
+snapshot drop security-focal-updates-universe-yesterday
+snapshot drop security-groovy-backports-main-yesterday
+snapshot drop security-groovy-backports-multiverse-yesterday
+snapshot drop security-groovy-backports-restricted-yesterday
+snapshot drop security-groovy-backports-universe-yesterday
+snapshot drop security-groovy-proposed-main-yesterday
+snapshot drop security-groovy-proposed-multiverse-yesterday
+snapshot drop security-groovy-proposed-restricted-yesterday
+snapshot drop security-groovy-proposed-universe-yesterday
+snapshot drop security-groovy-release-main-yesterday
+snapshot drop security-groovy-release-multiverse-yesterday
+snapshot drop security-groovy-release-restricted-yesterday
+snapshot drop security-groovy-release-universe-yesterday
+snapshot drop security-groovy-updates-main-yesterday
+snapshot drop security-groovy-updates-multiverse-yesterday
+snapshot drop security-groovy-updates-restricted-yesterday
+snapshot drop security-groovy-updates-universe-yesterday
+snapshot drop security-hirsute-backports-main-yesterday
+snapshot drop security-hirsute-backports-multiverse-yesterday
+snapshot drop security-hirsute-backports-restricted-yesterday
+snapshot drop security-hirsute-backports-universe-yesterday
+snapshot drop security-hirsute-proposed-main-yesterday
+snapshot drop security-hirsute-proposed-multiverse-yesterday
+snapshot drop security-hirsute-proposed-restricted-yesterday
+snapshot drop security-hirsute-proposed-universe-yesterday
+snapshot drop security-hirsute-release-main-yesterday
+snapshot drop security-hirsute-release-multiverse-yesterday
+snapshot drop security-hirsute-release-restricted-yesterday
+snapshot drop security-hirsute-release-universe-yesterday
+snapshot drop security-hirsute-updates-main-yesterday
+snapshot drop security-hirsute-updates-multiverse-yesterday
+snapshot drop security-hirsute-updates-restricted-yesterday
+snapshot drop security-hirsute-updates-universe-yesterday
+snapshot drop security-impish-backports-main-yesterday
+snapshot drop security-impish-backports-multiverse-yesterday
+snapshot drop security-impish-backports-restricted-yesterday
+snapshot drop security-impish-backports-universe-yesterday
+snapshot drop security-impish-proposed-main-yesterday
+snapshot drop security-impish-proposed-multiverse-yesterday
+snapshot drop security-impish-proposed-restricted-yesterday
+snapshot drop security-impish-proposed-universe-yesterday
+snapshot drop security-impish-release-main-yesterday
+snapshot drop security-impish-release-multiverse-yesterday
+snapshot drop security-impish-release-restricted-yesterday
+snapshot drop security-impish-release-universe-yesterday
+snapshot drop security-impish-updates-main-yesterday
+snapshot drop security-impish-updates-multiverse-yesterday
+snapshot drop security-impish-updates-restricted-yesterday
+snapshot drop security-impish-updates-universe-yesterday
+snapshot drop ubuntu-focal-backports-main-yesterday
+snapshot drop ubuntu-focal-backports-multiverse-yesterday
+snapshot drop ubuntu-focal-backports-restricted-yesterday
+snapshot drop ubuntu-focal-backports-universe-yesterday
+snapshot drop ubuntu-focal-proposed-main-yesterday
+snapshot drop ubuntu-focal-proposed-multiverse-yesterday
+snapshot drop ubuntu-focal-proposed-restricted-yesterday
+snapshot drop ubuntu-focal-proposed-universe-yesterday
+snapshot drop ubuntu-focal-release-main-yesterday
+snapshot drop ubuntu-focal-release-multiverse-yesterday
+snapshot drop ubuntu-focal-release-restricted-yesterday
+snapshot drop ubuntu-focal-release-universe-yesterday
+snapshot drop ubuntu-focal-updates-main-yesterday
+snapshot drop ubuntu-focal-updates-multiverse-yesterday
+snapshot drop ubuntu-focal-updates-restricted-yesterday
+snapshot drop ubuntu-focal-updates-universe-yesterday
+snapshot drop ubuntu-groovy-backports-main-yesterday
+snapshot drop ubuntu-groovy-backports-multiverse-yesterday
+snapshot drop ubuntu-groovy-backports-restricted-yesterday
+snapshot drop ubuntu-groovy-backports-universe-yesterday
+snapshot drop ubuntu-groovy-proposed-main-yesterday
+snapshot drop ubuntu-groovy-proposed-multiverse-yesterday
+snapshot drop ubuntu-groovy-proposed-restricted-yesterday
+snapshot drop ubuntu-groovy-proposed-universe-yesterday
+snapshot drop ubuntu-groovy-release-main-yesterday
+snapshot drop ubuntu-groovy-release-multiverse-yesterday
+snapshot drop ubuntu-groovy-release-restricted-yesterday
+snapshot drop ubuntu-groovy-release-universe-yesterday
+snapshot drop ubuntu-groovy-updates-main-yesterday
+snapshot drop ubuntu-groovy-updates-multiverse-yesterday
+snapshot drop ubuntu-groovy-updates-restricted-yesterday
+snapshot drop ubuntu-groovy-updates-universe-yesterday
+snapshot drop ubuntu-hirsute-backports-main-yesterday
+snapshot drop ubuntu-hirsute-backports-multiverse-yesterday
+snapshot drop ubuntu-hirsute-backports-restricted-yesterday
+snapshot drop ubuntu-hirsute-backports-universe-yesterday
+snapshot drop ubuntu-hirsute-proposed-main-yesterday
+snapshot drop ubuntu-hirsute-proposed-multiverse-yesterday
+snapshot drop ubuntu-hirsute-proposed-restricted-yesterday
+snapshot drop ubuntu-hirsute-proposed-universe-yesterday
+snapshot drop ubuntu-hirsute-release-main-yesterday
+snapshot drop ubuntu-hirsute-release-multiverse-yesterday
+snapshot drop ubuntu-hirsute-release-restricted-yesterday
+snapshot drop ubuntu-hirsute-release-universe-yesterday
+snapshot drop ubuntu-hirsute-updates-main-yesterday
+snapshot drop ubuntu-hirsute-updates-multiverse-yesterday
+snapshot drop ubuntu-hirsute-updates-restricted-yesterday
+snapshot drop ubuntu-hirsute-updates-universe-yesterday
+snapshot drop ubuntu-impish-backports-main-yesterday
+snapshot drop ubuntu-impish-backports-multiverse-yesterday
+snapshot drop ubuntu-impish-backports-restricted-yesterday
+snapshot drop ubuntu-impish-backports-universe-yesterday
+snapshot drop ubuntu-impish-proposed-main-yesterday
+snapshot drop ubuntu-impish-proposed-multiverse-yesterday
+snapshot drop ubuntu-impish-proposed-restricted-yesterday
+snapshot drop ubuntu-impish-proposed-universe-yesterday
+snapshot drop ubuntu-impish-release-main-yesterday
+snapshot drop ubuntu-impish-release-multiverse-yesterday
+snapshot drop ubuntu-impish-release-restricted-yesterday
+snapshot drop ubuntu-impish-release-universe-yesterday
+snapshot drop ubuntu-impish-updates-main-yesterday
+snapshot drop ubuntu-impish-updates-multiverse-yesterday
+snapshot drop ubuntu-impish-updates-restricted-yesterday
+snapshot drop ubuntu-impish-updates-universe-yesterday
+snapshot rename docker-focal-stable-today docker-focal-stable-yesterday
+snapshot rename microsoft-dotnet-today microsoft-dotnet-yesterday
+snapshot rename microsoft-edge-today microsoft-edge-yesterday
+snapshot rename microsoft-vscode-today microsoft-vscode-yesterday
+snapshot rename merged-focal-complete-main-today merged-focal-complete-main-yesterday
+snapshot rename merged-focal-complete-multiverse-today merged-focal-complete-multiverse-yesterday
+snapshot rename merged-focal-complete-restricted-today merged-focal-complete-restricted-yesterday
+snapshot rename merged-focal-complete-universe-today merged-focal-complete-universe-yesterday
+snapshot rename merged-groovy-complete-main-today merged-groovy-complete-main-yesterday
+snapshot rename merged-groovy-complete-multiverse-today merged-groovy-complete-multiverse-yesterday
+snapshot rename merged-groovy-complete-restricted-today merged-groovy-complete-restricted-yesterday
+snapshot rename merged-groovy-complete-universe-today merged-groovy-complete-universe-yesterday
+snapshot rename merged-hirsute-complete-main-today merged-hirsute-complete-main-yesterday
+snapshot rename merged-hirsute-complete-multiverse-today merged-hirsute-complete-multiverse-yesterday
+snapshot rename merged-hirsute-complete-restricted-today merged-hirsute-complete-restricted-yesterday
+snapshot rename merged-hirsute-complete-universe-today merged-hirsute-complete-universe-yesterday
+snapshot rename merged-impish-complete-main-today merged-impish-complete-main-yesterday
+snapshot rename merged-impish-complete-multiverse-today merged-impish-complete-multiverse-yesterday
+snapshot rename merged-impish-complete-restricted-today merged-impish-complete-restricted-yesterday
+snapshot rename merged-impish-complete-universe-today merged-impish-complete-universe-yesterday
+snapshot rename security-focal-backports-main-today security-focal-backports-main-yesterday
+snapshot rename security-focal-backports-multiverse-today security-focal-backports-multiverse-yesterday
+snapshot rename security-focal-backports-restricted-today security-focal-backports-restricted-yesterday
+snapshot rename security-focal-backports-universe-today security-focal-backports-universe-yesterday
+snapshot rename security-focal-proposed-main-today security-focal-proposed-main-yesterday
+snapshot rename security-focal-proposed-multiverse-today security-focal-proposed-multiverse-yesterday
+snapshot rename security-focal-proposed-restricted-today security-focal-proposed-restricted-yesterday
+snapshot rename security-focal-proposed-universe-today security-focal-proposed-universe-yesterday
+snapshot rename security-focal-release-main-today security-focal-release-main-yesterday
+snapshot rename security-focal-release-multiverse-today security-focal-release-multiverse-yesterday
+snapshot rename security-focal-release-restricted-today security-focal-release-restricted-yesterday
+snapshot rename security-focal-release-universe-today security-focal-release-universe-yesterday
+snapshot rename security-focal-updates-main-today security-focal-updates-main-yesterday
+snapshot rename security-focal-updates-multiverse-today security-focal-updates-multiverse-yesterday
+snapshot rename security-focal-updates-restricted-today security-focal-updates-restricted-yesterday
+snapshot rename security-focal-updates-universe-today security-focal-updates-universe-yesterday
+snapshot rename security-groovy-backports-main-today security-groovy-backports-main-yesterday
+snapshot rename security-groovy-backports-multiverse-today security-groovy-backports-multiverse-yesterday
+snapshot rename security-groovy-backports-restricted-today security-groovy-backports-restricted-yesterday
+snapshot rename security-groovy-backports-universe-today security-groovy-backports-universe-yesterday
+snapshot rename security-groovy-proposed-main-today security-groovy-proposed-main-yesterday
+snapshot rename security-groovy-proposed-multiverse-today security-groovy-proposed-multiverse-yesterday
+snapshot rename security-groovy-proposed-restricted-today security-groovy-proposed-restricted-yesterday
+snapshot rename security-groovy-proposed-universe-today security-groovy-proposed-universe-yesterday
+snapshot rename security-groovy-release-main-today security-groovy-release-main-yesterday
+snapshot rename security-groovy-release-multiverse-today security-groovy-release-multiverse-yesterday
+snapshot rename security-groovy-release-restricted-today security-groovy-release-restricted-yesterday
+snapshot rename security-groovy-release-universe-today security-groovy-release-universe-yesterday
+snapshot rename security-groovy-updates-main-today security-groovy-updates-main-yesterday
+snapshot rename security-groovy-updates-multiverse-today security-groovy-updates-multiverse-yesterday
+snapshot rename security-groovy-updates-restricted-today security-groovy-updates-restricted-yesterday
+snapshot rename security-groovy-updates-universe-today security-groovy-updates-universe-yesterday
+snapshot rename security-hirsute-backports-main-today security-hirsute-backports-main-yesterday
+snapshot rename security-hirsute-backports-multiverse-today security-hirsute-backports-multiverse-yesterday
+snapshot rename security-hirsute-backports-restricted-today security-hirsute-backports-restricted-yesterday
+snapshot rename security-hirsute-backports-universe-today security-hirsute-backports-universe-yesterday
+snapshot rename security-hirsute-proposed-main-today security-hirsute-proposed-main-yesterday
+snapshot rename security-hirsute-proposed-multiverse-today security-hirsute-proposed-multiverse-yesterday
+snapshot rename security-hirsute-proposed-restricted-today security-hirsute-proposed-restricted-yesterday
+snapshot rename security-hirsute-proposed-universe-today security-hirsute-proposed-universe-yesterday
+snapshot rename security-hirsute-release-main-today security-hirsute-release-main-yesterday
+snapshot rename security-hirsute-release-multiverse-today security-hirsute-release-multiverse-yesterday
+snapshot rename security-hirsute-release-restricted-today security-hirsute-release-restricted-yesterday
+snapshot rename security-hirsute-release-universe-today security-hirsute-release-universe-yesterday
+snapshot rename security-hirsute-updates-main-today security-hirsute-updates-main-yesterday
+snapshot rename security-hirsute-updates-multiverse-today security-hirsute-updates-multiverse-yesterday
+snapshot rename security-hirsute-updates-restricted-today security-hirsute-updates-restricted-yesterday
+snapshot rename security-hirsute-updates-universe-today security-hirsute-updates-universe-yesterday
+snapshot rename security-impish-backports-main-today security-impish-backports-main-yesterday
+snapshot rename security-impish-backports-multiverse-today security-impish-backports-multiverse-yesterday
+snapshot rename security-impish-backports-restricted-today security-impish-backports-restricted-yesterday
+snapshot rename security-impish-backports-universe-today security-impish-backports-universe-yesterday
+snapshot rename security-impish-proposed-main-today security-impish-proposed-main-yesterday
+snapshot rename security-impish-proposed-multiverse-today security-impish-proposed-multiverse-yesterday
+snapshot rename security-impish-proposed-restricted-today security-impish-proposed-restricted-yesterday
+snapshot rename security-impish-proposed-universe-today security-impish-proposed-universe-yesterday
+snapshot rename security-impish-release-main-today security-impish-release-main-yesterday
+snapshot rename security-impish-release-multiverse-today security-impish-release-multiverse-yesterday
+snapshot rename security-impish-release-restricted-today security-impish-release-restricted-yesterday
+snapshot rename security-impish-release-universe-today security-impish-release-universe-yesterday
+snapshot rename security-impish-updates-main-today security-impish-updates-main-yesterday
+snapshot rename security-impish-updates-multiverse-today security-impish-updates-multiverse-yesterday
+snapshot rename security-impish-updates-restricted-today security-impish-updates-restricted-yesterday
+snapshot rename security-impish-updates-universe-today security-impish-updates-universe-yesterday
+snapshot rename ubuntu-focal-backports-main-today ubuntu-focal-backports-main-yesterday
+snapshot rename ubuntu-focal-backports-multiverse-today ubuntu-focal-backports-multiverse-yesterday
+snapshot rename ubuntu-focal-backports-restricted-today ubuntu-focal-backports-restricted-yesterday
+snapshot rename ubuntu-focal-backports-universe-today ubuntu-focal-backports-universe-yesterday
+snapshot rename ubuntu-focal-proposed-main-today ubuntu-focal-proposed-main-yesterday
+snapshot rename ubuntu-focal-proposed-multiverse-today ubuntu-focal-proposed-multiverse-yesterday
+snapshot rename ubuntu-focal-proposed-restricted-today ubuntu-focal-proposed-restricted-yesterday
+snapshot rename ubuntu-focal-proposed-universe-today ubuntu-focal-proposed-universe-yesterday
+snapshot rename ubuntu-focal-release-main-today ubuntu-focal-release-main-yesterday
+snapshot rename ubuntu-focal-release-multiverse-today ubuntu-focal-release-multiverse-yesterday
+snapshot rename ubuntu-focal-release-restricted-today ubuntu-focal-release-restricted-yesterday
+snapshot rename ubuntu-focal-release-universe-today ubuntu-focal-release-universe-yesterday
+snapshot rename ubuntu-focal-updates-main-today ubuntu-focal-updates-main-yesterday
+snapshot rename ubuntu-focal-updates-multiverse-today ubuntu-focal-updates-multiverse-yesterday
+snapshot rename ubuntu-focal-updates-restricted-today ubuntu-focal-updates-restricted-yesterday
+snapshot rename ubuntu-focal-updates-universe-today ubuntu-focal-updates-universe-yesterday
+snapshot rename ubuntu-groovy-backports-main-today ubuntu-groovy-backports-main-yesterday
+snapshot rename ubuntu-groovy-backports-multiverse-today ubuntu-groovy-backports-multiverse-yesterday
+snapshot rename ubuntu-groovy-backports-restricted-today ubuntu-groovy-backports-restricted-yesterday
+snapshot rename ubuntu-groovy-backports-universe-today ubuntu-groovy-backports-universe-yesterday
+snapshot rename ubuntu-groovy-proposed-main-today ubuntu-groovy-proposed-main-yesterday
+snapshot rename ubuntu-groovy-proposed-multiverse-today ubuntu-groovy-proposed-multiverse-yesterday
+snapshot rename ubuntu-groovy-proposed-restricted-today ubuntu-groovy-proposed-restricted-yesterday
+snapshot rename ubuntu-groovy-proposed-universe-today ubuntu-groovy-proposed-universe-yesterday
+snapshot rename ubuntu-groovy-release-main-today ubuntu-groovy-release-main-yesterday
+snapshot rename ubuntu-groovy-release-multiverse-today ubuntu-groovy-release-multiverse-yesterday
+snapshot rename ubuntu-groovy-release-restricted-today ubuntu-groovy-release-restricted-yesterday
+snapshot rename ubuntu-groovy-release-universe-today ubuntu-groovy-release-universe-yesterday
+snapshot rename ubuntu-groovy-updates-main-today ubuntu-groovy-updates-main-yesterday
+snapshot rename ubuntu-groovy-updates-multiverse-today ubuntu-groovy-updates-multiverse-yesterday
+snapshot rename ubuntu-groovy-updates-restricted-today ubuntu-groovy-updates-restricted-yesterday
+snapshot rename ubuntu-groovy-updates-universe-today ubuntu-groovy-updates-universe-yesterday
+snapshot rename ubuntu-hirsute-backports-main-today ubuntu-hirsute-backports-main-yesterday
+snapshot rename ubuntu-hirsute-backports-multiverse-today ubuntu-hirsute-backports-multiverse-yesterday
+snapshot rename ubuntu-hirsute-backports-restricted-today ubuntu-hirsute-backports-restricted-yesterday
+snapshot rename ubuntu-hirsute-backports-universe-today ubuntu-hirsute-backports-universe-yesterday
+snapshot rename ubuntu-hirsute-proposed-main-today ubuntu-hirsute-proposed-main-yesterday
+snapshot rename ubuntu-hirsute-proposed-multiverse-today ubuntu-hirsute-proposed-multiverse-yesterday
+snapshot rename ubuntu-hirsute-proposed-restricted-today ubuntu-hirsute-proposed-restricted-yesterday
+snapshot rename ubuntu-hirsute-proposed-universe-today ubuntu-hirsute-proposed-universe-yesterday
+snapshot rename ubuntu-hirsute-release-main-today ubuntu-hirsute-release-main-yesterday
+snapshot rename ubuntu-hirsute-release-multiverse-today ubuntu-hirsute-release-multiverse-yesterday
+snapshot rename ubuntu-hirsute-release-restricted-today ubuntu-hirsute-release-restricted-yesterday
+snapshot rename ubuntu-hirsute-release-universe-today ubuntu-hirsute-release-universe-yesterday
+snapshot rename ubuntu-hirsute-updates-main-today ubuntu-hirsute-updates-main-yesterday
+snapshot rename ubuntu-hirsute-updates-multiverse-today ubuntu-hirsute-updates-multiverse-yesterday
+snapshot rename ubuntu-hirsute-updates-restricted-today ubuntu-hirsute-updates-restricted-yesterday
+snapshot rename ubuntu-hirsute-updates-universe-today ubuntu-hirsute-updates-universe-yesterday
+snapshot rename ubuntu-impish-backports-main-today ubuntu-impish-backports-main-yesterday
+snapshot rename ubuntu-impish-backports-multiverse-today ubuntu-impish-backports-multiverse-yesterday
+snapshot rename ubuntu-impish-backports-restricted-today ubuntu-impish-backports-restricted-yesterday
+snapshot rename ubuntu-impish-backports-universe-today ubuntu-impish-backports-universe-yesterday
+snapshot rename ubuntu-impish-proposed-main-today ubuntu-impish-proposed-main-yesterday
+snapshot rename ubuntu-impish-proposed-multiverse-today ubuntu-impish-proposed-multiverse-yesterday
+snapshot rename ubuntu-impish-proposed-restricted-today ubuntu-impish-proposed-restricted-yesterday
+snapshot rename ubuntu-impish-proposed-universe-today ubuntu-impish-proposed-universe-yesterday
+snapshot rename ubuntu-impish-release-main-today ubuntu-impish-release-main-yesterday
+snapshot rename ubuntu-impish-release-multiverse-today ubuntu-impish-release-multiverse-yesterday
+snapshot rename ubuntu-impish-release-restricted-today ubuntu-impish-release-restricted-yesterday
+snapshot rename ubuntu-impish-release-universe-today ubuntu-impish-release-universe-yesterday
+snapshot rename ubuntu-impish-updates-main-today ubuntu-impish-updates-main-yesterday
+snapshot rename ubuntu-impish-updates-multiverse-today ubuntu-impish-updates-multiverse-yesterday
+snapshot rename ubuntu-impish-updates-restricted-today ubuntu-impish-updates-restricted-yesterday
+snapshot rename ubuntu-impish-updates-universe-today ubuntu-impish-updates-universe-yesterday
+snapshot create docker-focal-stable-today from mirror docker-focal-stable
+snapshot create microsoft-dotnet-today from mirror microsoft-dotnet
+snapshot create microsoft-edge-today from mirror microsoft-edge
+snapshot create microsoft-vscode-today from mirror microsoft-vscode
+snapshot create security-focal-backports-main-today from mirror security-focal-backports-main
+snapshot create security-focal-backports-multiverse-today from mirror security-focal-backports-multiverse
+snapshot create security-focal-backports-restricted-today from mirror security-focal-backports-restricted
+snapshot create security-focal-backports-universe-today from mirror security-focal-backports-universe
+snapshot create security-focal-proposed-main-today from mirror security-focal-proposed-main
+snapshot create security-focal-proposed-multiverse-today from mirror security-focal-proposed-multiverse
+snapshot create security-focal-proposed-restricted-today from mirror security-focal-proposed-restricted
+snapshot create security-focal-proposed-universe-today from mirror security-focal-proposed-universe
+snapshot create security-focal-release-main-today from mirror security-focal-release-main
+snapshot create security-focal-release-multiverse-today from mirror security-focal-release-multiverse
+snapshot create security-focal-release-restricted-today from mirror security-focal-release-restricted
+snapshot create security-focal-release-universe-today from mirror security-focal-release-universe
+snapshot create security-focal-updates-main-today from mirror security-focal-updates-main
+snapshot create security-focal-updates-multiverse-today from mirror security-focal-updates-multiverse
+snapshot create security-focal-updates-restricted-today from mirror security-focal-updates-restricted
+snapshot create security-focal-updates-universe-today from mirror security-focal-updates-universe
+snapshot create security-groovy-backports-main-today from mirror security-groovy-backports-main
+snapshot create security-groovy-backports-multiverse-today from mirror security-groovy-backports-multiverse
+snapshot create security-groovy-backports-restricted-today from mirror security-groovy-backports-restricted
+snapshot create security-groovy-backports-universe-today from mirror security-groovy-backports-universe
+snapshot create security-groovy-proposed-main-today from mirror security-groovy-proposed-main
+snapshot create security-groovy-proposed-multiverse-today from mirror security-groovy-proposed-multiverse
+snapshot create security-groovy-proposed-restricted-today from mirror security-groovy-proposed-restricted
+snapshot create security-groovy-proposed-universe-today from mirror security-groovy-proposed-universe
+snapshot create security-groovy-release-main-today from mirror security-groovy-release-main
+snapshot create security-groovy-release-multiverse-today from mirror security-groovy-release-multiverse
+snapshot create security-groovy-release-restricted-today from mirror security-groovy-release-restricted
+snapshot create security-groovy-release-universe-today from mirror security-groovy-release-universe
+snapshot create security-groovy-updates-main-today from mirror security-groovy-updates-main
+snapshot create security-groovy-updates-multiverse-today from mirror security-groovy-updates-multiverse
+snapshot create security-groovy-updates-restricted-today from mirror security-groovy-updates-restricted
+snapshot create security-groovy-updates-universe-today from mirror security-groovy-updates-universe
+snapshot create security-hirsute-backports-main-today from mirror security-hirsute-backports-main
+snapshot create security-hirsute-backports-multiverse-today from mirror security-hirsute-backports-multiverse
+snapshot create security-hirsute-backports-restricted-today from mirror security-hirsute-backports-restricted
+snapshot create security-hirsute-backports-universe-today from mirror security-hirsute-backports-universe
+snapshot create security-hirsute-proposed-main-today from mirror security-hirsute-proposed-main
+snapshot create security-hirsute-proposed-multiverse-today from mirror security-hirsute-proposed-multiverse
+snapshot create security-hirsute-proposed-restricted-today from mirror security-hirsute-proposed-restricted
+snapshot create security-hirsute-proposed-universe-today from mirror security-hirsute-proposed-universe
+snapshot create security-hirsute-release-main-today from mirror security-hirsute-release-main
+snapshot create security-hirsute-release-multiverse-today from mirror security-hirsute-release-multiverse
+snapshot create security-hirsute-release-restricted-today from mirror security-hirsute-release-restricted
+snapshot create security-hirsute-release-universe-today from mirror security-hirsute-release-universe
+snapshot create security-hirsute-updates-main-today from mirror security-hirsute-updates-main
+snapshot create security-hirsute-updates-multiverse-today from mirror security-hirsute-updates-multiverse
+snapshot create security-hirsute-updates-restricted-today from mirror security-hirsute-updates-restricted
+snapshot create security-hirsute-updates-universe-today from mirror security-hirsute-updates-universe
+snapshot create security-impish-backports-main-today from mirror security-impish-backports-main
+snapshot create security-impish-backports-multiverse-today from mirror security-impish-backports-multiverse
+snapshot create security-impish-backports-restricted-today from mirror security-impish-backports-restricted
+snapshot create security-impish-backports-universe-today from mirror security-impish-backports-universe
+snapshot create security-impish-proposed-main-today from mirror security-impish-proposed-main
+snapshot create security-impish-proposed-multiverse-today from mirror security-impish-proposed-multiverse
+snapshot create security-impish-proposed-restricted-today from mirror security-impish-proposed-restricted
+snapshot create security-impish-proposed-universe-today from mirror security-impish-proposed-universe
+snapshot create security-impish-release-main-today from mirror security-impish-release-main
+snapshot create security-impish-release-multiverse-today from mirror security-impish-release-multiverse
+snapshot create security-impish-release-restricted-today from mirror security-impish-release-restricted
+snapshot create security-impish-release-universe-today from mirror security-impish-release-universe
+snapshot create security-impish-updates-main-today from mirror security-impish-updates-main
+snapshot create security-impish-updates-multiverse-today from mirror security-impish-updates-multiverse
+snapshot create security-impish-updates-restricted-today from mirror security-impish-updates-restricted
+snapshot create security-impish-updates-universe-today from mirror security-impish-updates-universe
+snapshot create ubuntu-focal-backports-main-today from mirror ubuntu-focal-backports-main
+snapshot create ubuntu-focal-backports-multiverse-today from mirror ubuntu-focal-backports-multiverse
+snapshot create ubuntu-focal-backports-restricted-today from mirror ubuntu-focal-backports-restricted
+snapshot create ubuntu-focal-backports-universe-today from mirror ubuntu-focal-backports-universe
+snapshot create ubuntu-focal-proposed-main-today from mirror ubuntu-focal-proposed-main
+snapshot create ubuntu-focal-proposed-multiverse-today from mirror ubuntu-focal-proposed-multiverse
+snapshot create ubuntu-focal-proposed-restricted-today from mirror ubuntu-focal-proposed-restricted
+snapshot create ubuntu-focal-proposed-universe-today from mirror ubuntu-focal-proposed-universe
+snapshot create ubuntu-focal-release-main-today from mirror ubuntu-focal-release-main
+snapshot create ubuntu-focal-release-multiverse-today from mirror ubuntu-focal-release-multiverse
+snapshot create ubuntu-focal-release-restricted-today from mirror ubuntu-focal-release-restricted
+snapshot create ubuntu-focal-release-universe-today from mirror ubuntu-focal-release-universe
+snapshot create ubuntu-focal-updates-main-today from mirror ubuntu-focal-updates-main
+snapshot create ubuntu-focal-updates-multiverse-today from mirror ubuntu-focal-updates-multiverse
+snapshot create ubuntu-focal-updates-restricted-today from mirror ubuntu-focal-updates-restricted
+snapshot create ubuntu-focal-updates-universe-today from mirror ubuntu-focal-updates-universe
+snapshot create ubuntu-groovy-backports-main-today from mirror ubuntu-groovy-backports-main
+snapshot create ubuntu-groovy-backports-multiverse-today from mirror ubuntu-groovy-backports-multiverse
+snapshot create ubuntu-groovy-backports-restricted-today from mirror ubuntu-groovy-backports-restricted
+snapshot create ubuntu-groovy-backports-universe-today from mirror ubuntu-groovy-backports-universe
+snapshot create ubuntu-groovy-proposed-main-today from mirror ubuntu-groovy-proposed-main
+snapshot create ubuntu-groovy-proposed-multiverse-today from mirror ubuntu-groovy-proposed-multiverse
+snapshot create ubuntu-groovy-proposed-restricted-today from mirror ubuntu-groovy-proposed-restricted
+snapshot create ubuntu-groovy-proposed-universe-today from mirror ubuntu-groovy-proposed-universe
+snapshot create ubuntu-groovy-release-main-today from mirror ubuntu-groovy-release-main
+snapshot create ubuntu-groovy-release-multiverse-today from mirror ubuntu-groovy-release-multiverse
+snapshot create ubuntu-groovy-release-restricted-today from mirror ubuntu-groovy-release-restricted
+snapshot create ubuntu-groovy-release-universe-today from mirror ubuntu-groovy-release-universe
+snapshot create ubuntu-groovy-updates-main-today from mirror ubuntu-groovy-updates-main
+snapshot create ubuntu-groovy-updates-multiverse-today from mirror ubuntu-groovy-updates-multiverse
+snapshot create ubuntu-groovy-updates-restricted-today from mirror ubuntu-groovy-updates-restricted
+snapshot create ubuntu-groovy-updates-universe-today from mirror ubuntu-groovy-updates-universe
+snapshot create ubuntu-hirsute-backports-main-today from mirror ubuntu-hirsute-backports-main
+snapshot create ubuntu-hirsute-backports-multiverse-today from mirror ubuntu-hirsute-backports-multiverse
+snapshot create ubuntu-hirsute-backports-restricted-today from mirror ubuntu-hirsute-backports-restricted
+snapshot create ubuntu-hirsute-backports-universe-today from mirror ubuntu-hirsute-backports-universe
+snapshot create ubuntu-hirsute-proposed-main-today from mirror ubuntu-hirsute-proposed-main
+snapshot create ubuntu-hirsute-proposed-multiverse-today from mirror ubuntu-hirsute-proposed-multiverse
+snapshot create ubuntu-hirsute-proposed-restricted-today from mirror ubuntu-hirsute-proposed-restricted
+snapshot create ubuntu-hirsute-proposed-universe-today from mirror ubuntu-hirsute-proposed-universe
+snapshot create ubuntu-hirsute-release-main-today from mirror ubuntu-hirsute-release-main
+snapshot create ubuntu-hirsute-release-multiverse-today from mirror ubuntu-hirsute-release-multiverse
+snapshot create ubuntu-hirsute-release-restricted-today from mirror ubuntu-hirsute-release-restricted
+snapshot create ubuntu-hirsute-release-universe-today from mirror ubuntu-hirsute-release-universe
+snapshot create ubuntu-hirsute-updates-main-today from mirror ubuntu-hirsute-updates-main
+snapshot create ubuntu-hirsute-updates-multiverse-today from mirror ubuntu-hirsute-updates-multiverse
+snapshot create ubuntu-hirsute-updates-restricted-today from mirror ubuntu-hirsute-updates-restricted
+snapshot create ubuntu-hirsute-updates-universe-today from mirror ubuntu-hirsute-updates-universe
+snapshot create ubuntu-impish-backports-main-today from mirror ubuntu-impish-backports-main
+snapshot create ubuntu-impish-backports-multiverse-today from mirror ubuntu-impish-backports-multiverse
+snapshot create ubuntu-impish-backports-restricted-today from mirror ubuntu-impish-backports-restricted
+snapshot create ubuntu-impish-backports-universe-today from mirror ubuntu-impish-backports-universe
+snapshot create ubuntu-impish-proposed-main-today from mirror ubuntu-impish-proposed-main
+snapshot create ubuntu-impish-proposed-multiverse-today from mirror ubuntu-impish-proposed-multiverse
+snapshot create ubuntu-impish-proposed-restricted-today from mirror ubuntu-impish-proposed-restricted
+snapshot create ubuntu-impish-proposed-universe-today from mirror ubuntu-impish-proposed-universe
+snapshot create ubuntu-impish-release-main-today from mirror ubuntu-impish-release-main
+snapshot create ubuntu-impish-release-multiverse-today from mirror ubuntu-impish-release-multiverse
+snapshot create ubuntu-impish-release-restricted-today from mirror ubuntu-impish-release-restricted
+snapshot create ubuntu-impish-release-universe-today from mirror ubuntu-impish-release-universe
+snapshot create ubuntu-impish-updates-main-today from mirror ubuntu-impish-updates-main
+snapshot create ubuntu-impish-updates-multiverse-today from mirror ubuntu-impish-updates-multiverse
+snapshot create ubuntu-impish-updates-restricted-today from mirror ubuntu-impish-updates-restricted
+snapshot create ubuntu-impish-updates-universe-today from mirror ubuntu-impish-updates-universe
+snapshot merge -latest merged-focal-complete-main-today security-focal-backports-main-today security-focal-proposed-main-today security-focal-release-main-today security-focal-updates-main-today ubuntu-focal-backports-main-today ubuntu-focal-proposed-main-today ubuntu-focal-release-main-today ubuntu-focal-updates-main-today
+snapshot merge -latest merged-focal-complete-multiverse-today security-focal-backports-multiverse-today security-focal-proposed-multiverse-today security-focal-release-multiverse-today security-focal-updates-multiverse-today ubuntu-focal-backports-multiverse-today ubuntu-focal-proposed-multiverse-today ubuntu-focal-release-multiverse-today ubuntu-focal-updates-multiverse-today
+snapshot merge -latest merged-focal-complete-restricted-today security-focal-backports-restricted-today security-focal-proposed-restricted-today security-focal-release-restricted-today security-focal-updates-restricted-today ubuntu-focal-backports-restricted-today ubuntu-focal-proposed-restricted-today ubuntu-focal-release-restricted-today ubuntu-focal-updates-restricted-today
+snapshot merge -latest merged-focal-complete-universe-today security-focal-backports-universe-today security-focal-proposed-universe-today security-focal-release-universe-today security-focal-updates-universe-today ubuntu-focal-backports-universe-today ubuntu-focal-proposed-universe-today ubuntu-focal-release-universe-today ubuntu-focal-updates-universe-today
+snapshot merge -latest merged-groovy-complete-main-today security-groovy-backports-main-today security-groovy-proposed-main-today security-groovy-release-main-today security-groovy-updates-main-today ubuntu-groovy-backports-main-today ubuntu-groovy-proposed-main-today ubuntu-groovy-release-main-today ubuntu-groovy-updates-main-today
+snapshot merge -latest merged-groovy-complete-multiverse-today security-groovy-backports-multiverse-today security-groovy-proposed-multiverse-today security-groovy-release-multiverse-today security-groovy-updates-multiverse-today ubuntu-groovy-backports-multiverse-today ubuntu-groovy-proposed-multiverse-today ubuntu-groovy-release-multiverse-today ubuntu-groovy-updates-multiverse-today
+snapshot merge -latest merged-groovy-complete-restricted-today security-groovy-backports-restricted-today security-groovy-proposed-restricted-today security-groovy-release-restricted-today security-groovy-updates-restricted-today ubuntu-groovy-backports-restricted-today ubuntu-groovy-proposed-restricted-today ubuntu-groovy-release-restricted-today ubuntu-groovy-updates-restricted-today
+snapshot merge -latest merged-groovy-complete-universe-today security-groovy-backports-universe-today security-groovy-proposed-universe-today security-groovy-release-universe-today security-groovy-updates-universe-today ubuntu-groovy-backports-universe-today ubuntu-groovy-proposed-universe-today ubuntu-groovy-release-universe-today ubuntu-groovy-updates-universe-today
+snapshot merge -latest merged-hirsute-complete-main-today security-hirsute-backports-main-today security-hirsute-proposed-main-today security-hirsute-release-main-today security-hirsute-updates-main-today ubuntu-hirsute-backports-main-today ubuntu-hirsute-proposed-main-today ubuntu-hirsute-release-main-today ubuntu-hirsute-updates-main-today
+snapshot merge -latest merged-hirsute-complete-multiverse-today security-hirsute-backports-multiverse-today security-hirsute-proposed-multiverse-today security-hirsute-release-multiverse-today security-hirsute-updates-multiverse-today ubuntu-hirsute-backports-multiverse-today ubuntu-hirsute-proposed-multiverse-today ubuntu-hirsute-release-multiverse-today ubuntu-hirsute-updates-multiverse-today
+snapshot merge -latest merged-hirsute-complete-restricted-today security-hirsute-backports-restricted-today security-hirsute-proposed-restricted-today security-hirsute-release-restricted-today security-hirsute-updates-restricted-today ubuntu-hirsute-backports-restricted-today ubuntu-hirsute-proposed-restricted-today ubuntu-hirsute-release-restricted-today ubuntu-hirsute-updates-restricted-today
+snapshot merge -latest merged-hirsute-complete-universe-today security-hirsute-backports-universe-today security-hirsute-proposed-universe-today security-hirsute-release-universe-today security-hirsute-updates-universe-today ubuntu-hirsute-backports-universe-today ubuntu-hirsute-proposed-universe-today ubuntu-hirsute-release-universe-today ubuntu-hirsute-updates-universe-today
+snapshot merge -latest merged-impish-complete-main-today security-impish-backports-main-today security-impish-proposed-main-today security-impish-release-main-today security-impish-updates-main-today ubuntu-impish-backports-main-today ubuntu-impish-proposed-main-today ubuntu-impish-release-main-today ubuntu-impish-updates-main-today
+snapshot merge -latest merged-impish-complete-multiverse-today security-impish-backports-multiverse-today security-impish-proposed-multiverse-today security-impish-release-multiverse-today security-impish-updates-multiverse-today ubuntu-impish-backports-multiverse-today ubuntu-impish-proposed-multiverse-today ubuntu-impish-release-multiverse-today ubuntu-impish-updates-multiverse-today
+snapshot merge -latest merged-impish-complete-restricted-today security-impish-backports-restricted-today security-impish-proposed-restricted-today security-impish-release-restricted-today security-impish-updates-restricted-today ubuntu-impish-backports-restricted-today ubuntu-impish-proposed-restricted-today ubuntu-impish-release-restricted-today ubuntu-impish-updates-restricted-today
+snapshot merge -latest merged-impish-complete-universe-today security-impish-backports-universe-today security-impish-proposed-universe-today security-impish-release-universe-today security-impish-updates-universe-today ubuntu-impish-backports-universe-today ubuntu-impish-proposed-universe-today ubuntu-impish-release-universe-today ubuntu-impish-updates-universe-today
+publish switch -component=stable focal docker docker-focal-stable-today
+publish switch -component=stable dotnet microsoft microsoft-dotnet-today
+publish switch -component=stable vscode microsoft microsoft-vscode-today
+publish switch -component=stable edge microsoft microsoft-edge-today
+publish switch -component=main,multiverse,restricted,universe focal-complete ubuntu merged-focal-complete-main-today merged-focal-complete-multiverse-today merged-focal-complete-restricted-today merged-focal-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe groovy-complete ubuntu merged-groovy-complete-main-today merged-groovy-complete-multiverse-today merged-groovy-complete-restricted-today merged-groovy-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe hirsute-complete ubuntu merged-hirsute-complete-main-today merged-hirsute-complete-multiverse-today merged-hirsute-complete-restricted-today merged-hirsute-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe impish-complete ubuntu merged-impish-complete-main-today merged-impish-complete-multiverse-today merged-impish-complete-restricted-today merged-impish-complete-universe-today

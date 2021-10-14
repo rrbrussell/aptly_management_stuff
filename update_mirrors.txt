@@ -1,6 +1,4 @@
 mirror update docker-focal-stable
-mirror update docker-groovy-stable
-mirror update docker-hirsute-stable
 mirror update microsoft-dotnet
 mirror update microsoft-edge
 mirror update microsoft-vscode
