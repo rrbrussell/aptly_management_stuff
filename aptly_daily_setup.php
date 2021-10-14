@@ -131,31 +131,53 @@ class OSMirror
  * Build the array of ubuntu OSMirrors
  */
 /*
-foreach(array("groovy", "hirsute", "impish") as $distro) {
+foreach(UBUNTU_DISTROS as $distro) {
 	$current = new OSMirror($distro, UBUNTU_COMPONENTS,
 	UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
 	foreach(UBUNTU_COMPONENTS as $component) {
 		$aptly_merge_commandline =
-		"aptly snapshot merge -latest " .
+		"snapshot rename %s %s\n";
+		printf($aptly_merge_commandline,
+			$current->GetMergedSnapshotForComponent(
+				$component, "today"),
+			$current->GetMergedSnapshotForComponent(
+				$component, "yesterday")
+			);
+	}
+}*/
+/*
+foreach(UBUNTU_DISTROS as $distro) {
+	$current = new OSMirror($distro, UBUNTU_COMPONENTS,
+	UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
+	foreach(UBUNTU_COMPONENTS as $component) {
+		$aptly_merge_commandline =
+		"snapshot merge -latest " .
 		$current->GetMergedSnapshotForComponent(
 			$component, "today") . " " .
 		implode(" ", $current->GetSnapshotsForComponent(
 			$component, "today"));
 		print($aptly_merge_commandline . "\n");
 	}
-}*/
-
-foreach(array("groovy", "hirsute", "impish") as $distro) {
+}
+*/
+/*
+foreach(UBUNTU_DISTROS as $distro) {
 	$current = new OSMirror($distro, UBUNTU_COMPONENTS,
 	UBUNTU_PATCH_LEVELS, UBUNTU_MIRRORS);
 	$aptly_publish_commandline =
-		"aptly publish snapshot -acquire-by-hash -distribution="
-		. $distro . "-complete -component=" .
+		"publish switch -component=" .
 		$current->GetComponentList(",") . " " .
+		$distro . " ubuntu " .
 		implode(" ",
-		$current->GetMergedSnapshotsForDate("today")) .
-		" ubuntu";
+		$current->GetMergedSnapshotsForDate("today"));
 	print($aptly_publish_commandline . "\n");
 }
-
+*/
+/*
+$output = array();
+exec("aptly mirror list -raw", $output);
+foreach ($output as &$line) {
+	printf("snapshot create %s-today from mirror %s\n", $line, $line);
+}
+*/
 ?>

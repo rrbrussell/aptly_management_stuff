@@ -1,0 +1,8 @@
+publish switch -component=stable focal docker docker-focal-stable-today
+publish switch -component=stable dotnet microsoft microsoft-dotnet-today
+publish switch -component=stable vscode microsoft microsoft-vscode-today
+publish switch -component=stable edge microsoft microsoft-edge-today
+publish switch -component=main,multiverse,restricted,universe focal-complete ubuntu merged-focal-complete-main-today merged-focal-complete-multiverse-today merged-focal-complete-restricted-today merged-focal-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe groovy-complete ubuntu merged-groovy-complete-main-today merged-groovy-complete-multiverse-today merged-groovy-complete-restricted-today merged-groovy-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe hirsute-complete ubuntu merged-hirsute-complete-main-today merged-hirsute-complete-multiverse-today merged-hirsute-complete-restricted-today merged-hirsute-complete-universe-today
+publish switch -component=main,multiverse,restricted,universe impish-complete ubuntu merged-impish-complete-main-today merged-impish-complete-multiverse-today merged-impish-complete-restricted-today merged-impish-complete-universe-today
