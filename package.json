@@ -2,5 +2,16 @@
   "devDependencies": {
     "@prettier/plugin-php": "^0.17.5",
     "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "prettier": "prettier"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingCommaPHP": true,
+    "braceStyle": "1tbs",
+    "semi": true,
+    "bracketSpacing": false
   }
 }

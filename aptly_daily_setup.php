@@ -4,14 +4,17 @@
  * These constants define which snapshots are managed by this
  * tool
  */
-const UBUNTU_DISTROS = array("focal", "groovy", "hirsute",
-	"impish");
-const UBUNTU_COMPONENTS = array("main", "multiverse",
-	"restricted", "universe");
-const UBUNTU_PATCH_LEVELS = array("backports", "proposed",
-	"release", "updates");
-const UBUNTU_MIRRORS = array("security","ubuntu");
-const DATES = array("today", "yesterday");
+const UBUNTU_DISTROS = ["focal", "groovy", "hirsute", "impish"];
+const UBUNTU_COMPONENTS = ["main", "multiverse", "restricted", "universe"];
+const UBUNTU_PATCH_LEVELS = [
+  "backports",
+  "proposed",
+  "release",
+  "updates",
+  "security",
+];
+const UBUNTU_MIRRORS = ["ubuntu"];
+const DATES = ["today", "yesterday"];
 /*
 $expanded_names = array();
 foreach ($distros as &$distrosvalue) {
@@ -27,104 +30,128 @@ foreach ($distros as &$distrosvalue) {
 var_dump($expanded_names);
 */
 
-class OSMirror
-{
-	private const MIRROR_STRING_TEMPLATE = "%s-%s-%s-%s";
-	private const SNAPSHOT_STRING_TEMPLATE =
-		OSMirror::MIRROR_STRING_TEMPLATE . "-%s";
-	public $OS = "";
-	public $Components = array();
-	public $PatchLevels = array();
-	public $Mirrors = array();
+class OSMirror {
+  private const MIRROR_STRING_TEMPLATE = "%s-%s-%s-%s";
+  private const SNAPSHOT_STRING_TEMPLATE =
+    OSMirror::MIRROR_STRING_TEMPLATE . "-%s";
+  public $OS = "";
+  public $Components = [];
+  public $PatchLevels = [];
+  public $Mirrors = [];
 
-	/**
-	 * The constructor
-	 */
-	public function __construct(string $os, array $comps, array
-		$patchlevels, array $mirrors) {
-		$this->OS = $os;
-		$this->Components = $comps;
-		$this->PatchLevels = $patchlevels;
-		$this->Mirrors = $mirrors;
-	}
+  /**
+   * The constructor
+   */
+  public function __construct(
+    string $os,
+    array $comps,
+    array $patchlevels,
+    array $mirrors
+  ) {
+    $this->OS = $os;
+    $this->Components = $comps;
+    $this->PatchLevels = $patchlevels;
+    $this->Mirrors = $mirrors;
+  }
 
-	public function GetSnapshotsForDate( string $date) {
-		$expanded = array();
-		foreach ($this->Mirrors as $mirror) {
-			foreach ($this->PatchLevels as $patchlevel) {
-				foreach ($this->Components as $component) {
-					$expanded[] = 
-					sprintf(OSMirror::SNAPSHOT_STRING_TEMPLATE,
-						$mirror, $this->OS, $patchlevel,
-						$component, $date);
-				}
-			}	
-		}
-		unset($mirror, $patchlevel, $component);
-		return $expanded;
-	}
+  public function GetSnapshotsForDate(string $date) {
+    $expanded = [];
+    foreach ($this->Mirrors as $mirror) {
+      foreach ($this->PatchLevels as $patchlevel) {
+        foreach ($this->Components as $component) {
+          $expanded[] = sprintf(
+            OSMirror::SNAPSHOT_STRING_TEMPLATE,
+            $mirror,
+            $this->OS,
+            $patchlevel,
+            $component,
+            $date
+          );
+        }
+      }
+    }
+    unset($mirror, $patchlevel, $component);
+    return $expanded;
+  }
 
-	public function ConstructArrayOfMirrors() {
-		$expanded = array();
-		foreach ($this->Mirrors as $mirror) {
-			foreach ($this->PatchLevels as $patchlevel) {
-				foreach ($this->Components as $component) {
-					$expanded[] = 
-					sprintf(OSMirror::MIRROR_STRING_TEMPLATE,
-						$mirror, $this->OS, $patchlevel,
-						$component);
-				}
-			}	
-		}
-		unset($mirror, $patchlevel, $component);
-		return $expanded;
-	}
+  public function ConstructArrayOfMirrors() {
+    $expanded = [];
+    foreach ($this->Mirrors as $mirror) {
+      foreach ($this->PatchLevels as $patchlevel) {
+        foreach ($this->Components as $component) {
+          $expanded[] = sprintf(
+            OSMirror::MIRROR_STRING_TEMPLATE,
+            $mirror,
+            $this->OS,
+            $patchlevel,
+            $component
+          );
+        }
+      }
+    }
+    unset($mirror, $patchlevel, $component);
+    return $expanded;
+  }
 
-	public function GetMirrorsForComponent(string $component) {
-		$expanded = array();
-		foreach ($this->Mirrors as $mirror) {
-			foreach ($this->PatchLevels as $patchlevel) {
-				$expanded[] = 
-				sprintf(OSMirror::MIRROR_STRING_TEMPLATE,
-					$mirror, $this->OS, $patchlevel, $component);
-			}
-		}
-		unset($mirror, $patchlevel);
-		return $expanded;
-	}
+  public function GetMirrorsForComponent(string $component) {
+    $expanded = [];
+    foreach ($this->Mirrors as $mirror) {
+      foreach ($this->PatchLevels as $patchlevel) {
+        $expanded[] = sprintf(
+          OSMirror::MIRROR_STRING_TEMPLATE,
+          $mirror,
+          $this->OS,
+          $patchlevel,
+          $component
+        );
+      }
+    }
+    unset($mirror, $patchlevel);
+    return $expanded;
+  }
 
-	public function GetSnapshotsForComponent(string $component,
-		string $date) {
-		$expanded = array();
-		foreach ($this->Mirrors as $mirror) {
-			foreach ($this->PatchLevels as $patchlevel) {
-				$expanded[] =
-				sprintf(OSMirror::SNAPSHOT_STRING_TEMPLATE,
-					$mirror, $this->OS, $patchlevel, $component,
-					$date);
-			}
-		}
-		return $expanded;
-	}
+  public function GetSnapshotsForComponent(string $component, string $date) {
+    $expanded = [];
+    foreach ($this->Mirrors as $mirror) {
+      foreach ($this->PatchLevels as $patchlevel) {
+        $expanded[] = sprintf(
+          OSMirror::SNAPSHOT_STRING_TEMPLATE,
+          $mirror,
+          $this->OS,
+          $patchlevel,
+          $component,
+          $date
+        );
+      }
+    }
+    return $expanded;
+  }
 
-	public function GetMergedSnapshotForComponent(
-		string $component, string $date) {
-		return sprintf(OSMirror::SNAPSHOT_STRING_TEMPLATE,
-			"merged", $this->OS, "complete", $component, $date);
-	}
+  public function GetMergedSnapshotForComponent(
+    string $component,
+    string $date
+  ) {
+    return sprintf(
+      OSMirror::SNAPSHOT_STRING_TEMPLATE,
+      "merged",
+      $this->OS,
+      "complete",
+      $component,
+      $date
+    );
+  }
 
-	public function GetMergedSnapshotsForDate(string $date) {
-		$expanded = array();
-		foreach ($this->Components as $component) {
-			$expanded[] = $this->GetMergedSnapshotForComponent(
-				$component, $date);
-		}
-		return $expanded;
-	}
+  public function GetMergedSnapshotsForDate(string $date) {
+    $expanded = [];
+    foreach ($this->Components as $component) {
+      $expanded[] = $this->GetMergedSnapshotForComponent($component, $date);
+    }
+    return $expanded;
+  }
 
-	public function GetComponentList(string $sep) {
-		return implode($sep, $this->Components);
-	}
+  public function GetComponentList(string $sep) {
+    return implode($sep, $this->Components);
+  }
 }
 
 /**
@@ -180,4 +207,6 @@ foreach ($output as &$line) {
 	printf("snapshot create %s-today from mirror %s\n", $line, $line);
 }
 */
+
+
 ?>
